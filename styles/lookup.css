@@ -1,0 +1,86 @@
+/* Reset and Import Replacements */
+body {
+    text-align: center;
+    margin: 2em;
+    background: #f3f3f3;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  hr {
+    margin: 1.5em 0;
+  }
+  
+  .visible {}
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /* Layout for Results Section */
+  section.results {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    overflow-x: auto;  /* Enables horizontal scrolling */
+    padding: 1em;
+    scroll-snap-type: x mandatory; /* Smooth snap scrolling */
+  }
+  
+  section.results .item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 180px; /* Fixed width to create horizontal scroll */
+    padding: 0.75em;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    scroll-snap-align: start; /* Snap alignment */
+    transition: background 0.3s ease;
+  }
+  
+  section.results .item:hover {
+    background: #f9f9f9;
+  }
+  
+  section.results .item.important {
+    background-color: red;
+    color: white;
+  }
+  
+  section.results .item > * {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Font sizes based on modular scale */
+  section.results .item .name {
+    font-size: 1.25em;
+    color: #333;
+  }
+  
+  section.results .item .price {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  /* "Show More" Button */
+  #show-more {
+    border-radius: 50px;
+    border: 1px solid blue;
+    margin: 20px auto;
+    max-width: 200px;
+    line-height: 2;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em 1em;
+    background-color: #ffffff;
+    color: blue;
+    cursor: pointer;
+  }
+  

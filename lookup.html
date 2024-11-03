@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/lookup.css">
+    
+    <title>lookup</title>
+</head>
+<body>
+
+    <h1>Filter and sort items</h1>
+<menu>
+		<label for="product-type">
+				Product type
+				<select name="product-type" id="product-type" class="filter">
+						<option value="0">all</option>
+						<option value="1">Product type 1</option>
+						<option value="2">Product type 2</option>
+						<option value="3">Product type 3</option>
+				</select>
+		</label>
+		<label for="platform">
+				Platform
+				<select name="platform" id="platform" class="filter">
+						<option value="0">all</option>
+						<option value="windows">Windows</option>
+						<option value="osx">OSX</option>
+						<option value="android">Android</option>
+				</select>
+		</label>
+		<label for="sort">
+				Sort by
+				<select name="sort" id="sort">
+						<option value="name">Name</option>
+						<option value="price">Price</option>
+						<option value="date">New</option>
+				</select>
+		</label>
+</menu>
+<hr />
+<section class="results">
+		<div class="item important" data-filter-product="1" data-filter-platform="osx" data-sort-name="A Item title" data-sort-price="9.99" data-sort-name="A Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">A Item title</div>
+				<div class="price">$9.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="1" data-filter-platform="android" data-sort-name="Z Item title" data-sort-price="59.99" data-sort-name="Z Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">Z Item title</div>
+				<div class="price">$59.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="1" data-filter-platform="android" data-sort-name="I Item title" data-sort-price="29.99" data-sort-name="I Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">I Item title</div>
+				<div class="price">$29.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="1" data-filter-platform="osx" data-sort-name="N Item title" data-sort-price="0" data-sort-name="N Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">N Item title</div>
+				<div class="price">Free</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="3" data-filter-platform="android" data-sort-name="O Item title" data-sort-price="9.99" data-sort-name="O Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">O Item title</div>
+				<div class="price">$9.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="2" data-filter-platform="windows" data-sort-name="R Item title" data-sort-price="14.99" data-sort-name="R Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">R Item title</div>
+				<div class="price">$14.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="1" data-filter-platform="osx" data-sort-name="H Item title" data-sort-price="9.99" data-sort-name="H Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">H Item title</div>
+				<div class="price">$9.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="2" data-filter-platform="windows" data-sort-name="B Item title" data-sort-price="14.99" data-sort-name="B Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">B Item title</div>
+				<div class="price">$14.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="3" data-filter-platform="windows" data-sort-name="D Item title" data-sort-price="24.99" data-sort-name="D Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">D Item title</div>
+				<div class="price">$24.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="2" data-filter-platform="windows" data-sort-name="Item title" data-sort-price=">$59.99" data-sort-name="Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">Item title</div>
+				<div class="price">$59.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="1" data-filter-platform="windows" data-sort-name="U Item title" data-sort-price="59.99" data-sort-name="U Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">U Item title</div>
+				<div class="price">$59.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+		<div class="item" data-filter-product="2" data-filter-platform="windows" data-sort-name="Z Item title" data-sort-price="59.99" data-sort-date="Z Item title">
+				<div class="thumb">
+						<img src="http://placehold.it/350x150" alt="" />
+				</div>
+				<div class="name">Z Item title</div>
+				<div class="price">$59.99</div>
+				<div class="menu">
+						<a href="#">Free Trial</a>
+						<a href="#">Buy Now</a>
+				</div>
+		</div>
+</section>
+
+
+    
+<script src="js/lookup.js"></script>
+</body>
+</html>
