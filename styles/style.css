@@ -10,13 +10,32 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
+    font-family: "Spartan", san-serif;
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--black-color);
     background-color: var(--white-color);
     overflow-x: hidden;
   }
+
+ /* nav root style */
+:root {
+  --primary-color: #eabf7f;
+  --default-color: #4f5665;
+  --black-color: #000;
+  --grey-color: #f0f0f0;
+  --white-color: #fff;
+  --light-milk: #eabf7f;
+  --blue: #1a1aff;
+  --custom: #1a1aff;
+  --color: #4d4d4d;
+  --lightblue: #ccccff;
+  --box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --box-shadow-2: 0 5px 15px rgba(255, 94, 58, 0.2);
+  --gradient: linear-gradient(90deg, rgba(234,191,127,1) 0%, rgba(115,114,109,1) 39%);
+  --btn-gradient:
+  --gradient: linear-gradient(90deg, rgba(234,191,127,1) 0%, rgba(115,114,109,1) 39%);;
+} 
 
 h1{
     font-size: 50px;
@@ -44,25 +63,6 @@ h1{
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0
-  }
-  
-/* nav root style */
-:root {
-    --primary-color: #eabf7f;
-    --default-color: #4f5665;
-    --black-color: #000;
-    --grey-color: #f0f0f0;
-    --white-color: #fff;
-    --light-milk: #eabf7f;
-    --blue: #1a1aff;
-    --custom: #1a1aff;
-    --color: #4d4d4d;
-    --lightblue: #ccccff;
-    --box-shadow-1: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --box-shadow-2: 0 5px 15px rgba(255, 94, 58, 0.2);
-    --gradient: linear-gradient(90deg, rgba(234,191,127,1) 0%, rgba(115,114,109,1) 39%);
-    --btn-gradient:
-    --gradient: linear-gradient(90deg, rgba(234,191,127,1) 0%, rgba(115,114,109,1) 39%);;
   }
   
   *,
@@ -304,9 +304,14 @@ a { text-decoration: none; }
     text-align: center;
     background-color: #f4f4f4; /* Initial background color */
     color: black; /* Initial text color */
-    padding: 10px;
+    padding: 15px;
+    border-radius: 10px;
     width: 100vw; /* Full width */
     margin: 0; /* Reset margin for full width */
+}
+
+.tab1 span{
+  color: #ef3636;
 }
 
 .tab1:hover {
@@ -495,6 +500,8 @@ a { text-decoration: none; }
   }
 
 /* ========== Banner end =========== */
+
+
 
 /* ========== banner  =========== */
 
